@@ -5,7 +5,31 @@
     android:id="@+id/lgnFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C1AEAE"
     tools:context=".LoginFragment">
+
+    <Button
+        android:id="@+id/fragmentBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#009688"
+        android:text="Profile"
+        app:layout_constraintBottom_toTopOf="@+id/names"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/mainBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#009688"
+        android:text="Main"
+        app:layout_constraintBottom_toTopOf="@+id/names"
+        app:layout_constraintEnd_toStartOf="@+id/fragmentBtn2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/names"
@@ -43,10 +67,10 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/male"
             android:layout_width="45dp"
             android:layout_height="33dp"
-            android:onClick="radioButtonhandler"
+
             android:text="M"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -56,7 +80,7 @@
             android:id="@+id/female"
             android:layout_width="45dp"
             android:layout_height="33dp"
-            android:onClick="radioButtonhandler"
+
             android:text="F"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.655"
@@ -67,7 +91,7 @@
             android:id="@+id/other"
             android:layout_width="96dp"
             android:layout_height="33dp"
-            android:onClick="radioButtonhandler"
+
             android:text="Other"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.949"
@@ -89,7 +113,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/Phone"
+        android:id="@+id/phone"
         android:layout_width="259dp"
         android:layout_height="57dp"
         android:layout_marginTop="324dp"
@@ -107,7 +131,7 @@
         android:layout_height="53dp"
         android:layout_marginTop="412dp"
         android:backgroundTint="#D500F9"
-        android:buttonTint="#D500F9"
+        android:buttonTint="#009688"
         android:text="Conditions"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.119"
@@ -115,11 +139,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/submitBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="548dp"
-        android:backgroundTint="#D500F9"
+        android:backgroundTint="#009688"
         android:onClick="submitbuttonHandler"
         android:text="SUBMIT"
         app:layout_constraintEnd_toEndOf="parent"
